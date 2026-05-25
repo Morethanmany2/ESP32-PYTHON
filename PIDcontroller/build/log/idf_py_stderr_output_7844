@@ -1,0 +1,9 @@
+Command: cmake -G Ninja -B C:\esp\esp-idf\PIDcontroller\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\Aditya.More\.espressif\python_env\idf6.1_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=True C:\esp\esp-idf\PIDcontroller
+Configuration Report               
++---------------------------------+
+|  Parser Version: 1              |
+|  Verbosity: default             |
+|  Defaults policy: sdkconfig     |
+|  Status: Finished successfully  |
+|                                 |
++---------------------------------+

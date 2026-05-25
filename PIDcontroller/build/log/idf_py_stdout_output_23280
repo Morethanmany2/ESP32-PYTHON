@@ -1,0 +1,349 @@
+Command: C:\Users\Aditya.More\.espressif\python_env\idf6.1_py3.11_env\Scripts\python.exe C:\esp\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\esp\esp-idf\PIDcontroller\build\blink.elf C:\esp\esp-idf\PIDcontroller\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Aditya.More\.espressif\python_env\idf6.1_py3.11_env\Scripts\python.exe' 'C:\esp\esp-idf\tools\idf.py'
+FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.1-dev-4427-gc00874869b 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 25 2026 16:04:30[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=06cbch ( 27836) map[0m
+[0;32mI (98) esp_image: segment 1: paddr=00016ce4 vaddr=3ffb0000 size=0283ch ( 10300) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00019528 vaddr=40080000 size=06af0h ( 27376) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0afb4h ( 44980) map[0m
+[0;32mI (130) esp_image: segment 4: paddr=0002afdc vaddr=40086af0 size=0391ch ( 14620) load[0m
+[0;32mI (136) esp_image: segment 5: paddr=0002e900 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (142) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (142) boot: Disabling RNG early entropy source...[0m
+[0;32mI (156) cpu_start: Multicore app[0m
+[0;32mI (164) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (164) cpu_start: Pro cpu start user code[0m
+[0;32mI (164) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (166) app_init: Application information:[0m
+[0;32mI (170) app_init: Project name:     blink[0m
+[0;32mI (174) app_init: App version:      v6.1-dev-4427-gc00874869b[0m
+[0;32mI (179) app_init: Compile time:     May 25 2026 16:04:09[0m
+[0;32mI (184) app_init: ELF file SHA256:  6def744f2...[0m
+[0;32mI (188) app_init: ESP-IDF:          v6.1-dev-4427-gc00874869b[0m
+[0;32mI (194) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (198) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (202) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (206) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (212) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (217) heap_init: At 3FFB3180 len 0002CE80 (179 KiB): DRAM[0m
+[0;32mI (222) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+I (228) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+[0;32mI (233) heap_init: At 4008A40C len 00015BF4 (86 KiB): IRAM[0m
+[0;33mW (239) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (252) spi_flash: detected chip: generic[0m
+[0;32mI (255) spi_flash: flash io: dio[0m
+[0;33mW (258) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (271) main_task: Started on CPU0[0m
+[0;32mI (281) main_task: Calling app_main()[0m
+Setpoint: 100.00 | Position: 10.00 | Output: 200.00
+Setpoint: 100.00 | Position: 19.00 | Output: 180.00
+Setpoint: 100.00 | Position: 27.10 | Output: 162.00
+Setpoint: 100.00 | Position: 34.39 | Output: 145.80
+Setpoint: 100.00 | Position: 40.95 | Output: 131.22
+Setpoint: 100.00 | Position: 46.86 | Output: 118.10
+Setpoint: 100.00 | Position: 52.17 | Output: 106.29
+Setpoint: 100.00 | Position: 56.95 | Output: 95.66
+Setpoint: 100.00 | Position: 61.26 | Output: 86.09
+Setpoint: 100.00 | Position: 65.13 | Output: 77.48
+Setpoint: 100.00 | Position: 68.62 | Output: 69.74
+Setpoint: 100.00 | Position: 71.76 | Output: 62.76
+Setpoint: 100.00 | Position: 74.58 | Output: 56.49
+Setpoint: 100.00 | Position: 77.12 | Output: 50.84
+Setpoint: 100.00 | Position: 79.41 | Output: 45.75
+Setpoint: 100.00 | Position: 81.47 | Output: 41.18
+Setpoint: 100.00 | Position: 83.32 | Output: 37.06
+Setpoint: 100.00 | Position: 84.99 | Output: 33.35
+Setpoint: 100.00 | Position: 86.49 | Output: 30.02
+Setpoint: 100.00 | Position: 87.84 | Output: 27.02
+Setpoint: 100.00 | Position: 89.06 | Output: 24.32
+Setpoint: 100.00 | Position: 90.15 | Output: 21.88
+Setpoint: 100.00 | Position: 91.14 | Output: 19.70
+Setpoint: 100.00 | Position: 92.02 | Output: 17.73
+Setpoint: 100.00 | Position: 92.82 | Output: 15.95
+Setpoint: 100.00 | Position: 93.54 | Output: 14.36
+Setpoint: 100.00 | Position: 94.19 | Output: 12.92
+Setpoint: 100.00 | Position: 94.77 | Output: 11.63
+Setpoint: 100.00 | Position: 95.29 | Output: 10.47
+Setpoint: 100.00 | Position: 95.76 | Output: 9.42
+Setpoint: 100.00 | Position: 96.18 | Output: 8.48
+Setpoint: 100.00 | Position: 96.57 | Output: 7.63
+Setpoint: 100.00 | Position: 96.91 | Output: 6.87
+Setpoint: 100.00 | Position: 97.22 | Output: 6.18
+Setpoint: 100.00 | Position: 97.50 | Output: 5.56
+Setpoint: 100.00 | Position: 97.75 | Output: 5.01
+Setpoint: 100.00 | Position: 97.97 | Output: 4.51
+Setpoint: 100.00 | Position: 98.18 | Output: 4.06
+Setpoint: 100.00 | Position: 98.36 | Output: 3.65
+Setpoint: 100.00 | Position: 98.52 | Output: 3.28
+Setpoint: 100.00 | Position: 98.67 | Output: 2.96
+Setpoint: 100.00 | Position: 98.80 | Output: 2.66
+Setpoint: 100.00 | Position: 98.92 | Output: 2.39
+Setpoint: 100.00 | Position: 99.03 | Output: 2.16
+Setpoint: 100.00 | Position: 99.13 | Output: 1.94
+Setpoint: 100.00 | Position: 99.21 | Output: 1.75
+Setpoint: 100.00 | Position: 99.29 | Output: 1.57
+Setpoint: 100.00 | Position: 99.36 | Output: 1.41
+Setpoint: 100.00 | Position: 99.43 | Output: 1.27
+Setpoint: 100.00 | Position: 99.48 | Output: 1.15
+Setpoint: 100.00 | Position: 99.54 | Output: 1.03
+Setpoint: 100.00 | Position: 99.58 | Output: 0.93
+Setpoint: 100.00 | Position: 99.62 | Output: 0.83
+Setpoint: 100.00 | Position: 99.66 | Output: 0.75
+Setpoint: 100.00 | Position: 99.70 | Output: 0.68
+Setpoint: 100.00 | Position: 99.73 | Output: 0.61
+Setpoint: 100.00 | Position: 99.75 | Output: 0.55
+Setpoint: 100.00 | Position: 99.78 | Output: 0.49
+Setpoint: 100.00 | Position: 99.80 | Output: 0.44
+Setpoint: 100.00 | Position: 99.82 | Output: 0.40
+Setpoint: 100.00 | Position: 99.84 | Output: 0.36
+Setpoint: 100.00 | Position: 99.85 | Output: 0.32
+Setpoint: 100.00 | Position: 99.87 | Output: 0.29
+Setpoint: 100.00 | Position: 99.88 | Output: 0.26
+Setpoint: 100.00 | Position: 99.89 | Output: 0.24
+Setpoint: 100.00 | Position: 99.90 | Output: 0.21
+Setpoint: 100.00 | Position: 99.91 | Output: 0.19
+Setpoint: 100.00 | Position: 99.92 | Output: 0.17
+Setpoint: 100.00 | Position: 99.93 | Output: 0.15
+Setpoint: 100.00 | Position: 99.94 | Output: 0.14
+Setpoint: 100.00 | Position: 99.94 | Output: 0.13
+Setpoint: 100.00 | Position: 99.95 | Output: 0.11
+Setpoint: 100.00 | Position: 99.95 | Output: 0.10
+Setpoint: 100.00 | Position: 99.96 | Output: 0.09
+Setpoint: 100.00 | Position: 99.96 | Output: 0.08
+Setpoint: 100.00 | Position: 99.97 | Output: 0.07
+Setpoint: 100.00 | Position: 99.97 | Output: 0.07
+Setpoint: 100.00 | Position: 99.97 | Output: 0.06
+Setpoint: 100.00 | Position: 99.98 | Output: 0.05
+Setpoint: 100.00 | Position: 99.98 | Output: 0.05
+Setpoint: 100.00 | Position: 99.98 | Output: 0.04
+Setpoint: 100.00 | Position: 99.98 | Output: 0.04
+Setpoint: 100.00 | Position: 99.98 | Output: 0.04
+Setpoint: 100.00 | Position: 99.99 | Output: 0.03
+Setpoint: 100.00 | Position: 99.99 | Output: 0.03
+Setpoint: 100.00 | Position: 99.99 | Output: 0.03
+Setpoint: 100.00 | Position: 99.99 | Output: 0.02
+Setpoint: 100.00 | Position: 99.99 | Output: 0.02
+Setpoint: 100.00 | Position: 99.99 | Output: 0.02
+Setpoint: 100.00 | Position: 99.99 | Output: 0.02
+Setpoint: 100.00 | Position: 99.99 | Output: 0.02
+Setpoint: 100.00 | Position: 99.99 | Output: 0.01
+Setpoint: 100.00 | Position: 99.99 | Output: 0.01
+Setpoint: 100.00 | Position: 100.00 | Output: 0.01
+Setpoint: 100.00 | Position: 100.00 | Output: 0.01
+Setpoint: 100.00 | Position: 100.00 | Output: 0.01
+Setpoint: 100.00 | Position: 100.00 | Output: 0.01
+Setpoint: 100.00 | Position: 100.00 | Output: 0.01
+Setpoint: 100.00 | Position: 100.00 | Output: 0.01
+Setpoint: 100.00 | Position: 100.00 | Output: 0.01
+Setpoint: 100.00 | Position: 100.00 | Output: 0.01
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
+Setpoint: 100.00 | Position: 100.00 | Output: 0.00
